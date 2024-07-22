@@ -137,7 +137,7 @@ menu "Project configuration"
 
     config BEACON_TEXT
         string "Beacon text"
-        default "--- -.- - . ... - - . ... -"
+        default "Default text"
         help
             Beacon text.
 
@@ -147,6 +147,12 @@ menu "Project configuration"
         default 25
         help
             Beacon repeat delay in seconds
+
+    config MORSE_CODE_BEACON_TEXT
+        string "Morse code text"
+        default "-.. . ..-. .- ..- .-.. - / - . ... -"
+        help
+            Morse code beacon text
 
     config MORSE_CODE_BEACON_TONE_FREQ
         int "Morse code beacon tone frequency"
